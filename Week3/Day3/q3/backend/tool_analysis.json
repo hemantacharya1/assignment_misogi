@@ -1,0 +1,94 @@
+{
+    "tools": {
+      "github_copilot": {
+        "name": "GitHub Copilot",
+        "latest_features": [
+          "Agent mode with autonomous bug-fixes & feature implementation",
+          "Multi‑model support (GPT‑4o, Claude 3.5, Gemini)",
+          "Inline next‑edit suggestions & CLI chat interface",
+          "Copilot Spaces for shared code+context"
+        ],
+        "strengths": [
+          "Deep GitHub/IDE integration",
+          "Excellent context awareness in large codebases",
+          "Supports pull‑request summaries & multi‑file edits"
+        ],
+        "use_cases": [
+          "Autonomous code maintenance",
+          "PR generation & review",
+          "Code generation within VS Code and VS IDE"
+        ]
+      },
+      "amazon_codewhisperer": {
+        "name": "Amazon CodeWhisperer",
+        "latest_features": [
+          "Integrated into Amazon Q Developer with security scanning",
+          "Private-code customization options"
+        ],
+        "strengths": [
+          "Strong AWS ecosystem alignment",
+          "Security‑focused code recommendations",
+          "Enterprise‑grade customization"
+        ],
+        "use_cases": [
+          "Secure AWS infra and API generation",
+          "Enterprise workflows leveraging internal libs"
+        ]
+      },
+      "cursor": {
+        "name": "Cursor AI",
+        "latest_features": [
+          "Agent mode for end‑to‑end multi‑file edits",
+          "Multi‑line smart rewrites & terminal commands",
+          "Code‑base chat & context retrieval",
+          "Error‑loop detection and auto‑fix"
+        ],
+        "strengths": [
+          "Deep codebase understanding",
+          "Powerful natural‑language editing (Ctrl+I/K)",
+          "Fast context‑aware debugging & refactoring"
+        ],
+        "use_cases": [
+          "Natural‑language batch edits",
+          "Code review and auto‑fix loops",
+          "Vibe‑coding with conversational code guidance"
+        ]
+      },
+      "replit": {
+        "name": "Replit Agent & Assistant",
+        "latest_features": [
+          "Agent v2 for autonomous app generation from natural language",
+          "Assistant for iteration, debugging, and refinement",
+          "Ghostwriter chat & autocomplete in browser IDE"
+        ],
+        "strengths": [
+          "All‑in‑one cloud IDE—code, host, deploy",
+          "Multi‑device support including mobile",
+          "Real‑time collaboration & multiplayer coding"
+        ],
+        "use_cases": [
+          "Prototyping & MVP generation",
+          "Educational use by non‑technical users",
+          "Collaborative development on cloud"
+        ]
+      },
+      "tabnine": {
+        "name": "Tabnine",
+        "latest_features": [
+          "Deep AI‑based code completion & chat assistant",
+          "Team‑customizable models respecting privacy/compliance"
+        ],
+        "strengths": [
+          "High accuracy and broad language support (80+)",
+          "Privacy‑first—for enterprise control",
+          "IDE‑agnostic: VS Code, JetBrains, etc."
+        ],
+        "use_cases": [
+          "Secure code completion & context‑aware fixes",
+          "Test generation & documentation assistance",
+          "Cross‑IDE autocomplete across languages"
+        ]
+      }
+    }
+  }
+  
