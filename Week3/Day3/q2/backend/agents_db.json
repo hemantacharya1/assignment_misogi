@@ -1,0 +1,172 @@
+[
+    {
+      "id": "copilot",
+      "name": "GitHub Copilot",
+      "provider": "GitHub (Microsoft)",
+      "description": "AI pair‑programmer that suggests entire lines or blocks of code in real‑time inside popular IDEs.",
+      "strengths": [
+        "Context‑aware autocomplete and code generation",
+        "Wide language coverage (Python, JavaScript, TypeScript, Go, Ruby, Java, C#, C++)",
+        "Good for boilerplate and test scaffolding"
+      ],
+      "limitations": [
+        "Requires internet connection to GitHub API",
+        "Quality drops on very large files or unfamiliar frameworks",
+        "May generate insecure or non‑idiomatic code without review"
+      ],
+      "best_for": [
+        "Green‑field feature coding",
+        "Writing unit tests quickly",
+        "Exploring unfamiliar APIs"
+      ],
+      "tags": ["completion", "ide-plugin", "multi-language"]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor AI",
+      "provider": "Cursor",
+      "description": "IDE built around an LLM assistant that can answer questions about your codebase and generate changes via natural language.",
+      "strengths": [
+        "Codebase‑aware chat and refactor commands",
+        "Supports natural‑language diff generation and in‑editor PRs",
+        "Good for reading and understanding existing projects"
+      ],
+      "limitations": [
+        "Full power available only in Cursor editor (VS Code fork)",
+        "Project indexing can be slow on very large monorepos"
+      ],
+      "best_for": [
+        "Large‑scale refactors",
+        "Explaining legacy code",
+        "Generating pull‑request ready diffs"
+      ],
+      "tags": ["chat", "code-refactor", "ide"]
+    },
+    {
+      "id": "codewhisperer",
+      "name": "Amazon CodeWhisperer",
+      "provider": "Amazon AWS",
+      "description": "Generates real‑time code recommendations and security scans, tightly integrated with AWS services and IDEs.",
+      "strengths": [
+        "AWS API‑aware suggestions (S3, DynamoDB, Lambda, etc.)",
+        "Built‑in security scanning for 50+ vulnerability types",
+        "Free tier for individual developers"
+      ],
+      "limitations": [
+        "Less effective outside of AWS‑focused projects",
+        "IDE plugin features lag behind Copilot on some languages"
+      ],
+      "best_for": [
+        "Building cloud infrastructure code",
+        "Writing Lambda functions and IaC scripts",
+        "Security‑minded development"
+      ],
+      "tags": ["completion", "security", "aws"]
+    },
+    {
+      "id": "ghostwriter",
+      "name": "Replit Ghostwriter",
+      "provider": "Replit",
+      "description": "Browser‑based AI assistant inside Replit’s online IDE for instant prototyping and deployment.",
+      "strengths": [
+        "Works entirely in the browser—no local setup",
+        "Instant runnable repls for 50+ languages",
+        "Conversation memory across code and shell"
+      ],
+      "limitations": [
+        "Primarily optimized for Replit workspace",
+        "Limited offline/desktop IDE integration"
+      ],
+      "best_for": [
+        "Quick prototypes and hackathon demos",
+        "Teaching/learning programming",
+        "Collaborative pair programming in the cloud"
+      ],
+      "tags": ["browser-ide", "completion", "chat"]
+    },
+    {
+      "id": "tabnine",
+      "name": "Tabnine",
+      "provider": "Tabnine",
+      "description": "Privacy‑focused code completion that can run fully on‑prem or in the cloud.",
+      "strengths": [
+        "Local model option for air‑gapped environments",
+        "Team training on private repos",
+        "Lightweight autocomplete with low latency"
+      ],
+      "limitations": [
+        "No conversational agent mode",
+        "Smaller model sizes reduce long‑range context understanding"
+      ],
+      "best_for": [
+        "Enterprise environments with strict data policies",
+        "Incremental typing speed‑ups",
+        "Small‑to‑medium size projects"
+      ],
+      "tags": ["completion", "on-prem", "privacy"]
+    },
+    {
+      "id": "codeium",
+      "name": "Codeium",
+      "provider": "Codeium",
+      "description": "Free‑to‑use autocomplete that supports 70+ languages and multiple IDEs.",
+      "strengths": [
+        "Cost‑effective (free for individual use)",
+        "Wide language and IDE coverage",
+        "Fast inference speed"
+      ],
+      "limitations": [
+        "Feature set focused mainly on autocomplete, limited chat/refactor tools",
+        "Quality varies on niche languages"
+      ],
+      "best_for": [
+        "General code completion",
+        "Budget‑conscious individual developers",
+        "Learning new languages"
+      ],
+      "tags": ["completion", "multi-language", "free-tier"]
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf AI",
+      "provider": "Windsurf Labs",
+      "description": "(Hypothetical) Open‑source LLM‑powered assistant that runs locally and integrates with popular editors.",
+      "strengths": [
+        "Offline‑first deployment",
+        "Customizable with user fine‑tuning",
+        "No telemetry or data egress"
+      ],
+      "limitations": [
+        "Smaller base model → less fluent suggestions",
+        "Manual setup required for GPU acceleration"
+      ],
+      "best_for": [
+        "Privacy‑sensitive projects",
+        "Research labs and regulated industries",
+        "Plugin hackers who enjoy tweaking models"
+      ],
+      "tags": ["open-source", "local", "privacy"]
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable Dev Companion",
+      "provider": "Lovable AI",
+      "description": "(Hypothetical) Empathy‑driven coding coach that mixes motivational feedback with code suggestions via chat.",
+      "strengths": [
+        "Positive, mentor‑like conversational tone",
+        "Provides step‑by‑step explanations and learning resources",
+        "Gamified coding challenges and streak tracking"
+      ],
+      "limitations": [
+        "Not optimized for raw typing speed",
+        "Limited enterprise features or on‑prem support"
+      ],
+      "best_for": [
+        "Beginners needing encouragement",
+        "Code bootcamps and tutoring",
+        "Solo developers looking for morale boosts"
+      ],
+      "tags": ["chat", "education", "ui","frontend"]
+    }
+  ]
+  
