@@ -1,0 +1,6 @@
+# Local virtual environment
+venv/
+__pycache__/
+*.py[cod]
+# Secrets
+.env 
