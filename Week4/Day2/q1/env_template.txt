@@ -1,0 +1,10 @@
+# Environment Configuration Template
+# 
+# 1. Copy this file and rename it to '.env'
+# 2. Replace 'your_api_key_here' with your actual Google Gemini API key
+# 3. Get your API key from: https://makersuite.google.com/app/apikey
+
+GOOGLE_API_KEY=your_api_key_here
+
+# Example:
+# GOOGLE_API_KEY=AxxBxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
