@@ -1,0 +1,515 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@company.com",
+      "role": "CEO",
+      "timezone": "Asia/Kolkata",
+      "working_hours": {
+        "start": "09:00",
+        "end": "18:00"
+      },
+      "preferences": {
+        "max_meetings_per_day": 8,
+        "preferred_meeting_duration": 30,
+        "lunch_break": "13:00-14:00",
+        "no_meetings_after": "18:00"
+      }
+    },
+    {
+      "id": "user2",
+      "name": "John Smith",
+      "email": "john.smith@company.com",
+      "role": "Engineering Manager",
+      "timezone": "America/New_York",
+      "working_hours": {
+        "start": "09:00",
+        "end": "17:00"
+      },
+      "preferences": {
+        "max_meetings_per_day": 6,
+        "preferred_meeting_duration": 45,
+        "lunch_break": "12:00-13:00",
+        "no_meetings_before": "09:00"
+      }
+    },
+    {
+      "id": "user3",
+      "name": "Maria Garcia",
+      "email": "maria.garcia@company.com",
+      "role": "Product Manager",
+      "timezone": "Europe/Berlin",
+      "working_hours": {
+        "start": "08:00",
+        "end": "16:00"
+      },
+      "preferences": {
+        "max_meetings_per_day": 7,
+        "preferred_meeting_duration": 30,
+        "lunch_break": "12:00-13:00",
+        "focus_time": "14:00-16:00"
+      }
+    },
+    {
+      "id": "user4",
+      "name": "David Wilson",
+      "email": "david.wilson@company.com",
+      "role": "Senior Developer",
+      "timezone": "America/Los_Angeles",
+      "working_hours": {
+        "start": "10:00",
+        "end": "18:00"
+      },
+      "preferences": {
+        "max_meetings_per_day": 4,
+        "preferred_meeting_duration": 30,
+        "lunch_break": "13:00-14:00",
+        "focus_time": "10:00-12:00"
+      }
+    },
+    {
+      "id": "user5",
+      "name": "Raj Patel",
+      "email": "raj.patel@company.com",
+      "role": "Sales Director",
+      "timezone": "Asia/Kolkata",
+      "working_hours": {
+        "start": "09:30",
+        "end": "18:30"
+      },
+      "preferences": {
+        "max_meetings_per_day": 10,
+        "preferred_meeting_duration": 45,
+        "lunch_break": "13:30-14:30",
+        "client_calls_preferred": true
+      }
+    }
+  ],
+  "meetings": [
+    {
+      "id": "meeting1",
+      "title": "Q4 Strategy Review",
+      "description": "Quarterly strategy review with leadership team",
+      "organizer": "user1",
+      "participants": [
+        "user1",
+        "user2",
+        "user3",
+        "user5"
+      ],
+      "start_time": "2025-01-10T10:00:00",
+      "end_time": "2025-01-10T11:30:00",
+      "timezone": "Asia/Kolkata",
+      "type": "strategy",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": 85,
+      "follow_up_actions": 5
+    },
+    {
+      "id": "meeting2",
+      "title": "1:1 with John",
+      "description": "Weekly one-on-one meeting",
+      "organizer": "user1",
+      "participants": [
+        "user1",
+        "user2"
+      ],
+      "start_time": "2025-01-08T15:00:00",
+      "end_time": "2025-01-08T15:30:00",
+      "timezone": "Asia/Kolkata",
+      "type": "one_on_one",
+      "priority": "medium",
+      "status": "completed",
+      "recurring": true,
+      "recurrence_pattern": "weekly",
+      "effectiveness_score": 92,
+      "follow_up_actions": 2
+    },
+    {
+      "id": "meeting3",
+      "title": "Product Roadmap Planning",
+      "description": "Planning product roadmap for next quarter",
+      "organizer": "user3",
+      "participants": [
+        "user1",
+        "user2",
+        "user3"
+      ],
+      "start_time": "2025-01-12T14:00:00",
+      "end_time": "2025-01-12T16:00:00",
+      "timezone": "Europe/Berlin",
+      "type": "planning",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting4",
+      "title": "Team Standup",
+      "description": "Daily team standup meeting",
+      "organizer": "user2",
+      "participants": [
+        "user2",
+        "user4"
+      ],
+      "start_time": "2025-01-07T10:00:00",
+      "end_time": "2025-01-07T10:15:00",
+      "timezone": "America/New_York",
+      "type": "standup",
+      "priority": "medium",
+      "status": "completed",
+      "recurring": true,
+      "recurrence_pattern": "daily",
+      "effectiveness_score": 78,
+      "follow_up_actions": 1
+    },
+    {
+      "id": "meeting5",
+      "title": "Client Call - ABC Corp",
+      "description": "Sales call with ABC Corporation",
+      "organizer": "user5",
+      "participants": [
+        "user5",
+        "user1"
+      ],
+      "start_time": "2025-01-09T11:00:00",
+      "end_time": "2025-01-09T12:00:00",
+      "timezone": "Asia/Kolkata",
+      "type": "client_call",
+      "priority": "high",
+      "status": "completed",
+      "recurring": false,
+      "effectiveness_score": 95,
+      "follow_up_actions": 8
+    },
+    {
+      "id": "meeting6",
+      "title": "Engineering Sprint Review",
+      "description": "Sprint review with engineering team",
+      "organizer": "user2",
+      "participants": [
+        "user2",
+        "user4"
+      ],
+      "start_time": "2025-01-11T15:00:00",
+      "end_time": "2025-01-11T16:00:00",
+      "timezone": "America/New_York",
+      "type": "review",
+      "priority": "medium",
+      "status": "scheduled",
+      "recurring": true,
+      "recurrence_pattern": "bi-weekly",
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting7",
+      "title": "Product Demo",
+      "description": "Product demonstration to stakeholders",
+      "organizer": "user3",
+      "participants": [
+        "user3",
+        "user1",
+        "user5"
+      ],
+      "start_time": "2025-01-13T09:00:00",
+      "end_time": "2025-01-13T10:30:00",
+      "timezone": "Europe/Berlin",
+      "type": "demo",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting8",
+      "title": "All Hands Meeting",
+      "description": "Monthly all hands company meeting",
+      "organizer": "user1",
+      "participants": [
+        "user1",
+        "user2",
+        "user3",
+        "user4",
+        "user5"
+      ],
+      "start_time": "2025-01-15T10:00:00",
+      "end_time": "2025-01-15T11:00:00",
+      "timezone": "Asia/Kolkata",
+      "type": "all_hands",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": true,
+      "recurrence_pattern": "monthly",
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting9",
+      "title": "1:1 with Maria",
+      "description": "Weekly one-on-one meeting",
+      "organizer": "user1",
+      "participants": [
+        "user1",
+        "user3"
+      ],
+      "start_time": "2025-01-08T16:00:00",
+      "end_time": "2025-01-08T16:30:00",
+      "timezone": "Asia/Kolkata",
+      "type": "one_on_one",
+      "priority": "medium",
+      "status": "completed",
+      "recurring": true,
+      "recurrence_pattern": "weekly",
+      "effectiveness_score": 88,
+      "follow_up_actions": 3
+    },
+    {
+      "id": "meeting10",
+      "title": "Code Review Session",
+      "description": "Review code changes and technical discussions",
+      "organizer": "user4",
+      "participants": [
+        "user4",
+        "user2"
+      ],
+      "start_time": "2025-01-10T11:00:00",
+      "end_time": "2025-01-10T12:00:00",
+      "timezone": "America/Los_Angeles",
+      "type": "technical",
+      "priority": "medium",
+      "status": "completed",
+      "recurring": false,
+      "effectiveness_score": 82,
+      "follow_up_actions": 4
+    },
+    {
+      "id": "meeting11",
+      "title": "Sales Pipeline Review",
+      "description": "Review current sales pipeline and opportunities",
+      "organizer": "user5",
+      "participants": [
+        "user5",
+        "user1"
+      ],
+      "start_time": "2025-01-12T14:00:00",
+      "end_time": "2025-01-12T15:00:00",
+      "timezone": "Asia/Kolkata",
+      "type": "sales",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": true,
+      "recurrence_pattern": "weekly",
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting12",
+      "title": "Team Building Activity",
+      "description": "Virtual team building session",
+      "organizer": "user2",
+      "participants": [
+        "user2",
+        "user4",
+        "user3"
+      ],
+      "start_time": "2025-01-14T16:00:00",
+      "end_time": "2025-01-14T17:00:00",
+      "timezone": "America/New_York",
+      "type": "team_building",
+      "priority": "low",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting13",
+      "title": "Budget Planning",
+      "description": "Q1 budget planning discussion",
+      "organizer": "user1",
+      "participants": [
+        "user1",
+        "user3",
+        "user5"
+      ],
+      "start_time": "2025-01-16T11:00:00",
+      "end_time": "2025-01-16T12:30:00",
+      "timezone": "Asia/Kolkata",
+      "type": "planning",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting14",
+      "title": "Customer Feedback Session",
+      "description": "Review customer feedback and improvement plans",
+      "organizer": "user3",
+      "participants": [
+        "user3",
+        "user2",
+        "user5"
+      ],
+      "start_time": "2025-01-17T10:00:00",
+      "end_time": "2025-01-17T11:00:00",
+      "timezone": "Europe/Berlin",
+      "type": "feedback",
+      "priority": "medium",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting15",
+      "title": "Architecture Review",
+      "description": "Review system architecture and scalability",
+      "organizer": "user4",
+      "participants": [
+        "user4",
+        "user2"
+      ],
+      "start_time": "2025-01-18T14:00:00",
+      "end_time": "2025-01-18T15:30:00",
+      "timezone": "America/Los_Angeles",
+      "type": "technical",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting16",
+      "title": "Marketing Campaign Review",
+      "description": "Review marketing campaign performance",
+      "organizer": "user5",
+      "participants": [
+        "user5",
+        "user1",
+        "user3"
+      ],
+      "start_time": "2025-01-19T13:00:00",
+      "end_time": "2025-01-19T14:00:00",
+      "timezone": "Asia/Kolkata",
+      "type": "marketing",
+      "priority": "medium",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting17",
+      "title": "Security Audit",
+      "description": "Security audit and compliance review",
+      "organizer": "user2",
+      "participants": [
+        "user2",
+        "user4"
+      ],
+      "start_time": "2025-01-20T10:00:00",
+      "end_time": "2025-01-20T11:30:00",
+      "timezone": "America/New_York",
+      "type": "security",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting18",
+      "title": "Project Kickoff",
+      "description": "Kickoff meeting for new project",
+      "organizer": "user3",
+      "participants": [
+        "user3",
+        "user2",
+        "user4"
+      ],
+      "start_time": "2025-01-21T09:00:00",
+      "end_time": "2025-01-21T10:00:00",
+      "timezone": "Europe/Berlin",
+      "type": "kickoff",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting19",
+      "title": "Performance Review",
+      "description": "Quarterly performance review",
+      "organizer": "user1",
+      "participants": [
+        "user1",
+        "user2"
+      ],
+      "start_time": "2025-01-22T15:00:00",
+      "end_time": "2025-01-22T16:00:00",
+      "timezone": "Asia/Kolkata",
+      "type": "performance",
+      "priority": "medium",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting20",
+      "title": "Client Onboarding",
+      "description": "Onboarding session for new client",
+      "organizer": "user5",
+      "participants": [
+        "user5",
+        "user3"
+      ],
+      "start_time": "2025-01-23T11:00:00",
+      "end_time": "2025-01-23T12:00:00",
+      "timezone": "Asia/Kolkata",
+      "type": "onboarding",
+      "priority": "high",
+      "status": "scheduled",
+      "recurring": false,
+      "effectiveness_score": null,
+      "follow_up_actions": null
+    },
+    {
+      "id": "meeting_21",
+      "title": "Test Meeting",
+      "organizer": "user1",
+      "participants": [
+        "user1",
+        "user2"
+      ],
+      "start_time": "2025-03-01T15:00:00",
+      "end_time": "2025-03-01T15:30:00",
+      "timezone": "UTC",
+      "status": "scheduled"
+    },
+    {
+      "id": "meeting_22",
+      "title": "Demo Meeting",
+      "organizer": "user1",
+      "participants": [
+        "user1",
+        "user2"
+      ],
+      "start_time": "2025-03-01T10:00:00",
+      "end_time": "2025-03-01T11:00:00",
+      "timezone": "UTC",
+      "status": "scheduled"
+    }
+  ]
+}
