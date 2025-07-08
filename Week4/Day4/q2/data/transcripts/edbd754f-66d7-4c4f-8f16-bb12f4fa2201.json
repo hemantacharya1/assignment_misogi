@@ -1,0 +1,639 @@
+{
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 2.0,
+      "text": "Now, stop me if you've heard this one before,"
+    },
+    {
+      "start": 2.0,
+      "end": 5.5200000000000005,
+      "text": "but there are a lot of large language models available today,"
+    },
+    {
+      "start": 5.5200000000000005,
+      "end": 8.88,
+      "text": "and they have their own capabilities and specialities."
+    },
+    {
+      "start": 8.88,
+      "end": 11.92,
+      "text": "What if I prefer to use one LLM to interpret"
+    },
+    {
+      "start": 11.92,
+      "end": 14.52,
+      "text": "some user queries in my business application,"
+    },
+    {
+      "start": 14.52,
+      "end": 19.0,
+      "text": "but a whole other LLM to author a response to those queries?"
+    },
+    {
+      "start": 19.0,
+      "end": 24.12,
+      "text": "Well, that scenario is exactly what Langchain Caters 2."
+    },
+    {
+      "start": 24.12,
+      "end": 27.28,
+      "text": "Langchain is an open source orchestration framework"
+    },
+    {
+      "start": 27.28,
+      "end": 31.32,
+      "text": "for the development of applications that use large language models,"
+    },
+    {
+      "start": 31.32,
+      "end": 34.760000000000005,
+      "text": "and it comes in both Python and JavaScript libraries."
+    },
+    {
+      "start": 34.760000000000005,
+      "end": 39.08,
+      "text": "It's essentially a generic interface for nearly any LLM,"
+    },
+    {
+      "start": 39.08,
+      "end": 41.2,
+      "text": "so you have a centralized development environment"
+    },
+    {
+      "start": 41.2,
+      "end": 43.92,
+      "text": "to build your large language model applications,"
+    },
+    {
+      "start": 43.92,
+      "end": 45.56,
+      "text": "and then integrate them with stuff,"
+    },
+    {
+      "start": 45.56,
+      "end": 49.2,
+      "text": "like data sources and software workflows."
+    },
+    {
+      "start": 49.2,
+      "end": 52.72,
+      "text": "Now, when it was launched by Harrison Chase in October 2022,"
+    },
+    {
+      "start": 52.72,
+      "end": 55.040000000000006,
+      "text": "Langchain enjoyed a meteoric rise,"
+    },
+    {
+      "start": 55.040000000000006,
+      "end": 56.72,
+      "text": "and by June of the following year,"
+    },
+    {
+      "start": 56.72,
+      "end": 60.519999999999996,
+      "text": "it was the single fastest growing open source project on GitHub."
+    },
+    {
+      "start": 60.519999999999996,
+      "end": 66.76,
+      "text": "And while the Langchain hype train has slightly cooled a little bit,"
+    },
+    {
+      "start": 66.76,
+      "end": 68.76,
+      "text": "there's plenty of utility here,"
+    },
+    {
+      "start": 68.76,
+      "end": 72.84,
+      "text": "so let's take a look at its components."
+    },
+    {
+      "start": 72.84,
+      "end": 79.16,
+      "text": "So what makes up Langchain?"
+    },
+    {
+      "start": 79.16,
+      "end": 83.12,
+      "text": "Well, Langchain streamlines the programming of LLM applications"
+    },
+    {
+      "start": 83.12,
+      "end": 85.32,
+      "text": "through something called abstractions."
+    },
+    {
+      "start": 85.32,
+      "end": 86.32,
+      "text": "What do I mean by that?"
+    },
+    {
+      "start": 86.32000000000001,
+      "end": 89.84,
+      "text": "Well, your thermostat that allows you to control the temperature in your home"
+    },
+    {
+      "start": 89.84,
+      "end": 94.28,
+      "text": "without needing to understand all the complex circuitry that this entails,"
+    },
+    {
+      "start": 94.28,
+      "end": 96.60000000000001,
+      "text": "we just set the temperature, that's an abstraction."
+    },
+    {
+      "start": 96.60000000000001,
+      "end": 100.4,
+      "text": "So Langchain's abstractions represent common steps"
+    },
+    {
+      "start": 100.4,
+      "end": 103.84,
+      "text": "and concepts necessary to work with language models,"
+    },
+    {
+      "start": 103.84,
+      "end": 108.0,
+      "text": "and they can be chained together to create applications,"
+    },
+    {
+      "start": 108.0,
+      "end": 112.56,
+      "text": "minimizing the amount of code required to execute complex NLP tasks."
+    },
+    {
+      "start": 112.56,
+      "end": 118.60000000000001,
+      "text": "So let's start with the LLM module."
+    },
+    {
+      "start": 118.60000000000001,
+      "end": 122.28,
+      "text": "Now, nearly any LLM can be used in Langchain,"
+    },
+    {
+      "start": 122.28,
+      "end": 124.56,
+      "text": "you just need an API key."
+    },
+    {
+      "start": 124.56,
+      "end": 128.4,
+      "text": "The LLM class is designed to provide a standard interface for all models,"
+    },
+    {
+      "start": 128.4,
+      "end": 130.88,
+      "text": "so pick an LLM of your choice,"
+    },
+    {
+      "start": 130.88,
+      "end": 134.04,
+      "text": "be that a closed source one like GPT-4"
+    },
+    {
+      "start": 134.04,
+      "end": 137.0,
+      "text": "or an open source one like LRMA-2,"
+    },
+    {
+      "start": 137.0,
+      "end": 140.64000000000001,
+      "text": "or this being Langchain, pick both."
+    },
+    {
+      "start": 140.68,
+      "end": 142.60000000000002,
+      "text": "Okay, what else do we got?"
+    },
+    {
+      "start": 142.60000000000002,
+      "end": 146.08,
+      "text": "We have prompts."
+    },
+    {
+      "start": 146.08,
+      "end": 149.56,
+      "text": "Now, prompts are the instructions given to a large language model,"
+    },
+    {
+      "start": 149.56,
+      "end": 154.20000000000002,
+      "text": "and the prompt template class in Langchain formalizes the composition of prompts"
+    },
+    {
+      "start": 154.20000000000002,
+      "end": 158.60000000000002,
+      "text": "without the need to manually hard code context and queries."
+    },
+    {
+      "start": 158.60000000000002,
+      "end": 161.84,
+      "text": "A prompt template can contain instructions like"
+    },
+    {
+      "start": 161.84,
+      "end": 165.32000000000002,
+      "text": "do not use technical terms in your response, that would be a good one,"
+    },
+    {
+      "start": 165.32000000000002,
+      "end": 168.20000000000002,
+      "text": "or it could be a set of examples to guide its responses,"
+    },
+    {
+      "start": 168.20000000000002,
+      "end": 170.08,
+      "text": "that's called view shop prompting,"
+    },
+    {
+      "start": 170.08,
+      "end": 173.04000000000002,
+      "text": "or it could specify an output format."
+    },
+    {
+      "start": 173.04000000000002,
+      "end": 180.72000000000003,
+      "text": "Now, chains as the name implies are the core of the Langchain's workflows."
+    },
+    {
+      "start": 180.72000000000003,
+      "end": 183.32000000000002,
+      "text": "They combine LLMs with other components,"
+    },
+    {
+      "start": 183.32000000000002,
+      "end": 186.48000000000002,
+      "text": "creating applications by executing a sequence of functions."
+    },
+    {
+      "start": 186.48000000000002,
+      "end": 189.24,
+      "text": "So let's say our application that needs to,"
+    },
+    {
+      "start": 189.24,
+      "end": 191.56,
+      "text": "first of all, retrieve data from a website,"
+    },
+    {
+      "start": 191.56,
+      "end": 194.68,
+      "text": "then it needs to summarize the text that gets back,"
+    },
+    {
+      "start": 194.68,
+      "end": 199.28,
+      "text": "and then finally, it needs to use that summary to answer user submitted questions."
+    },
+    {
+      "start": 199.28,
+      "end": 204.84,
+      "text": "That's a sequential chain where the output of one function acts as the input to the next,"
+    },
+    {
+      "start": 204.84,
+      "end": 208.36,
+      "text": "and each function in the chain could use different prompts,"
+    },
+    {
+      "start": 208.36,
+      "end": 212.48000000000002,
+      "text": "different parameters, and even different models."
+    },
+    {
+      "start": 212.48000000000002,
+      "end": 215.88,
+      "text": "Now, to achieve certain tasks, LLMs might need to access"
+    },
+    {
+      "start": 215.88,
+      "end": 223.32,
+      "text": "specific external data sources that are not included in the training data set of the LLM itself."
+    },
+    {
+      "start": 223.32,
+      "end": 227.28,
+      "text": "So things like internal documents or emails, that sort of thing."
+    },
+    {
+      "start": 227.28,
+      "end": 233.92,
+      "text": "Now, Langchain collectively refers to this sort of documentation as indexes,"
+    },
+    {
+      "start": 233.92,
+      "end": 236.23999999999998,
+      "text": "and there are a number of them."
+    },
+    {
+      "start": 236.23999999999998,
+      "end": 238.64,
+      "text": "So let's take a look at a few."
+    },
+    {
+      "start": 238.64,
+      "end": 245.95999999999998,
+      "text": "Now, one of them is called a document loader."
+    },
+    {
+      "start": 245.95999999999998,
+      "end": 248.76,
+      "text": "Now, document loaders, they work with third-party applications"
+    },
+    {
+      "start": 248.76,
+      "end": 252.79999999999998,
+      "text": "for importing data sources from sources like file storage services,"
+    },
+    {
+      "start": 252.8,
+      "end": 256.32,
+      "text": "I think Dropbox or Google Drive,"
+    },
+    {
+      "start": 256.32,
+      "end": 259.88,
+      "text": "or web content from YouTube transcripts,"
+    },
+    {
+      "start": 259.88,
+      "end": 265.76,
+      "text": "or collaboration tools like AirTable or Databases like Pandas and MongoDB."
+    },
+    {
+      "start": 265.76,
+      "end": 272.28000000000003,
+      "text": "There's also support for vector databases as well."
+    },
+    {
+      "start": 272.28000000000003,
+      "end": 275.68,
+      "text": "Now, unlike traditional structured databases,"
+    },
+    {
+      "start": 275.68,
+      "end": 280.44,
+      "text": "vector databases represent data points by converting them into something called vector embeddings,"
+    },
+    {
+      "start": 280.44,
+      "end": 284.88,
+      "text": "which are numerical representations in the form of vectors with a fixed number of dimensions."
+    },
+    {
+      "start": 284.88,
+      "end": 291.8,
+      "text": "And you can store a lot of information in this format as it's a very efficient means of retrieval."
+    },
+    {
+      "start": 291.8,
+      "end": 296.6,
+      "text": "There are also something called text splitters,"
+    },
+    {
+      "start": 296.6,
+      "end": 298.92,
+      "text": "which can be very useful as well,"
+    },
+    {
+      "start": 298.92,
+      "end": 301.12,
+      "text": "because they can split text up into small,"
+    },
+    {
+      "start": 301.12,
+      "end": 307.32,
+      "text": "semantically meaningful chunks that can then be combined using the methods and parameters of your choosing."
+    },
+    {
+      "start": 307.32,
+      "end": 312.56,
+      "text": "Now, LLMs by default don't really have any long-term memory of prior conversations,"
+    },
+    {
+      "start": 312.56,
+      "end": 317.32,
+      "text": "unless you happen to pass the chat history in as an input to your query."
+    },
+    {
+      "start": 317.32,
+      "end": 326.56,
+      "text": "But chain solves this problem with simple utilities for adding in memory into your application."
+    },
+    {
+      "start": 326.56,
+      "end": 330.96,
+      "text": "And you have options for retaining the entire conversations"
+    },
+    {
+      "start": 330.96,
+      "end": 336.8,
+      "text": "through two options to just retain a summarization of the conversation that we've had so far."
+    },
+    {
+      "start": 336.8,
+      "end": 341.72,
+      "text": "And then finally, the last one we'll look at are agents."
+    },
+    {
+      "start": 341.72,
+      "end": 348.56,
+      "text": "Now, agents can use a given language model as a reasoning engine to determine which actions to take."
+    },
+    {
+      "start": 348.56,
+      "end": 350.48,
+      "text": "And when building a chain for an agent,"
+    },
+    {
+      "start": 350.48,
+      "end": 354.96000000000004,
+      "text": "you'll want to include inputs like a list of the available tools that it should use,"
+    },
+    {
+      "start": 354.96000000000004,
+      "end": 357.36,
+      "text": "the user input, like the prompts and the queries,"
+    },
+    {
+      "start": 357.36,
+      "end": 360.88,
+      "text": "and then any other relevant previously executed steps."
+    },
+    {
+      "start": 360.88,
+      "end": 366.84,
+      "text": "So, how can we put all of this to work for our applications?"
+    },
+    {
+      "start": 366.84,
+      "end": 369.92,
+      "text": "Well, let's talk about a few Langchain use cases."
+    },
+    {
+      "start": 369.92,
+      "end": 373.48,
+      "text": "Now, obviously, we have chatbots."
+    },
+    {
+      "start": 373.48,
+      "end": 379.56,
+      "text": "Langchain can be used to provide proper context for the specific use of a chatbot"
+    },
+    {
+      "start": 379.56,
+      "end": 386.52,
+      "text": "and to integrate chatbots into existing communication channels and workflows with their own APIs."
+    },
+    {
+      "start": 386.52,
+      "end": 388.88,
+      "text": "We also have summarization."
+    },
+    {
+      "start": 388.88,
+      "end": 392.71999999999997,
+      "text": "Language models can be tasked with summarizing many types of text"
+    },
+    {
+      "start": 392.71999999999997,
+      "end": 396.52,
+      "text": "from breaking down complex academic papers and transcripts"
+    },
+    {
+      "start": 396.52,
+      "end": 400.96,
+      "text": "to providing just a digest of incoming emails."
+    },
+    {
+      "start": 400.96,
+      "end": 404.6,
+      "text": "We'll also see lots of examples where this is used for question answering."
+    },
+    {
+      "start": 404.6,
+      "end": 408.48,
+      "text": "So, using specific documents or specialized knowledge bases,"
+    },
+    {
+      "start": 408.48,
+      "end": 411.24,
+      "text": "LLMs can retrieve the relevant information from the storage"
+    },
+    {
+      "start": 411.24,
+      "end": 413.2,
+      "text": "and then articulate helpful answers"
+    },
+    {
+      "start": 413.2,
+      "end": 418.24,
+      "text": "using the information that would otherwise not have been in their training dataset."
+    },
+    {
+      "start": 418.28000000000003,
+      "end": 421.88,
+      "text": "And, yeah, this is a good one, data augmentation."
+    },
+    {
+      "start": 421.88,
+      "end": 426.2,
+      "text": "LLMs can be used to generate synthetic data for use of machine learning."
+    },
+    {
+      "start": 426.2,
+      "end": 430.24,
+      "text": "So, for example, the LLM can be trained to generate additional samples"
+    },
+    {
+      "start": 430.24,
+      "end": 435.0,
+      "text": "that closely resemble the real data points in a training dataset."
+    },
+    {
+      "start": 435.0,
+      "end": 440.28000000000003,
+      "text": "And there are, of course, virtual agents as we already started to discuss."
+    },
+    {
+      "start": 440.28000000000003,
+      "end": 442.56,
+      "text": "Integrated with the right workflows,"
+    },
+    {
+      "start": 442.56,
+      "end": 447.16,
+      "text": "Langchain's agent modules can use an LLM to autonomously determine the next steps"
+    },
+    {
+      "start": 447.16,
+      "end": 450.12,
+      "text": "and then take the action that it needs to complete that step"
+    },
+    {
+      "start": 450.12,
+      "end": 455.04,
+      "text": "using something called RPA or robotic process automation."
+    },
+    {
+      "start": 455.04,
+      "end": 457.6,
+      "text": "Langchain is open source and free to use."
+    },
+    {
+      "start": 457.6,
+      "end": 460.28000000000003,
+      "text": "There are also related frameworks like LangServe"
+    },
+    {
+      "start": 460.28000000000003,
+      "end": 463.24,
+      "text": "for creating chains as REST APIs and LangSmith,"
+    },
+    {
+      "start": 463.24,
+      "end": 467.16,
+      "text": "which provides tools to monitor, evaluate, and debug applications."
+    },
+    {
+      "start": 467.16,
+      "end": 470.44000000000005,
+      "text": "Essentially, Langchain's tools and APIs"
+    },
+    {
+      "start": 470.44000000000005,
+      "end": 473.6,
+      "text": "simplify the process of building applications"
+    },
+    {
+      "start": 473.6,
+      "end": 477.48,
+      "text": "that make use of large language models."
+    },
+    {
+      "start": 477.48,
+      "end": 480.12,
+      "text": "If you have any questions, please drop us a line below."
+    },
+    {
+      "start": 480.12,
+      "end": 483.04,
+      "text": "And if you want to see more videos like this in the future,"
+    },
+    {
+      "start": 483.04,
+      "end": 485.28000000000003,
+      "text": "please like and subscribe."
+    },
+    {
+      "start": 485.28000000000003,
+      "end": 486.28000000000003,
+      "text": "Thanks for watching."
+    }
+  ]
+}
