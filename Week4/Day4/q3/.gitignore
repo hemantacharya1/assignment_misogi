@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.env
+.env.*
+*.sqlite3
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# VSCode settings
+.vscode/
+
+# macOS / Linux
+.DS_Store
+
+# Node
+node_modules/
+dist/
+build/
+*.lock
+
+# Log files
+*.log
+
+# IDEs
+.idea/
+*.swp
+
+# Coverage
+htmlcov/
+.coverage
+.cache/
+
+# Database
+*.db
+*.db-journal
+*.sql
+
+# Tailwind output (if any)
+*.css.map
