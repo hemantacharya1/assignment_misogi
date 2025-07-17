@@ -1,0 +1,17 @@
+Document: Understanding Your Monthly Invoice
+Your monthly invoice summarizes all billable activity for the previous 30 days. This includes your subscription plan, usage-based charges (if any), and applicable taxes. You can view and download your invoices by visiting the Billing section in your dashboard.
+
+The Invoice Summary shows your base plan and any overages (e.g., extra API calls or storage). Below that, you'll find a breakdown by service, with line items like “Pro Plan Subscription,” “Excess API Usage,” and “Additional Seats.”
+
+If something doesn’t look right, double-check your usage logs, which are available under the Usage tab. These logs are updated in near-real time and help you track usage patterns across your team.
+
+Still have questions? Reach out to our billing team via the Contact Support button in the Billing section. We usually reply within one business day.
+
+Document: Requesting a Refund for a Billing Error
+If you believe there’s a mistake on your bill, you can request a refund within 14 days of the charge. To get started, go to your Billing page and click on the invoice in question. Use the Report an Issue button to send a message directly to our billing team.
+
+In your message, please include the invoice number, a short explanation of the issue, and any relevant context (e.g., unexpected plan change or duplicate charge). This helps us investigate and respond more quickly.
+
+Refunds are typically processed within 3–5 business days once the request is approved. You’ll get a confirmation email once it’s done.
+
+If the charge came through a third-party reseller or payment platform (e.g., Apple Pay or Stripe Connect), refund times may vary slightly based on their processing timelines.

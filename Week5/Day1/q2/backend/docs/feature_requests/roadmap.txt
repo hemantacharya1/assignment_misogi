@@ -1,0 +1,19 @@
+Document: How to Submit a Feature Request
+We love hearing what features would make your experience better. If you have a request, head to our Feature Requests board in the Help Center. Click Submit a Feature and describe your idea clearly—what it does, why it matters to you, and how it would improve your workflow.
+
+The more context you provide, the easier it is for our product team to understand the request and evaluate its impact. You can also browse and upvote other ideas submitted by the community.
+
+Once submitted, you’ll get email updates when the status changes (e.g., under review, planned, released). While we can’t promise every idea will be built, we take customer input seriously and regularly review top-voted requests.
+
+For enterprise customers, you can also discuss roadmap influence during your quarterly check-ins with your account manager.
+
+Document: Comparing Our Product to [Competitor Name]
+We often get asked how our product compares to [Competitor Name]. While both platforms may offer similar features, there are a few key differences that set us apart.
+
+First, our platform is built with simplicity in mind—setup takes minutes, and you don’t need a dedicated engineer to maintain it. We also offer transparent, usage-based pricing with no surprise fees or limits on core functionality.
+
+Second, our API is designed for real-time speed and scale, and our customers report better performance under load compared to [Competitor Name].
+
+Finally, our support team is in-house and deeply familiar with the product, ensuring faster resolutions. We also publish a public roadmap and changelog so you know exactly what’s coming next.
+
+If you’re considering switching or need a deeper technical comparison, our sales team is happy to set up a call or send over a side-by-side matrix.
