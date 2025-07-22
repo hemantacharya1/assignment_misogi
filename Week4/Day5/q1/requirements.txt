@@ -1,0 +1,25 @@
+pandas
+numpy
+scikit-learn
+nltk
+spacy
+gensim
+transformers
+sentence-transformers
+openai
+tqdm
+joblib
+matplotlib
+seaborn
+plotly
+umap-learn
+
+# For backend
+fastapi
+uvicorn
+
+# Optional: For Streamlit (if you want fast UI preview later)
+streamlit
+
+# Visualization (optional but helpful)
+scikit-plot
