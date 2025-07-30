@@ -7,19 +7,20 @@ from langchain_core.documents import Document
 from langchain_core.messages import HumanMessage
 from langchain_core.prompts import PromptTemplate
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
+# from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from unstructured.partition.pdf import partition_pdf
 from unstructured.partition.docx import partition_docx
 from unstructured.partition.image import partition_image
 from unstructured.partition.text import partition_text
 from unstructured.documents.elements import Image
-
+from langchain_ollama import ChatOllama
+from langchain_ollama import OllamaEmbeddings
 load_dotenv()
 
-text_llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
-vision_llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
-embedding_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+text_llm = ChatOllama(model="gemma2:2b")
+vision_llm = ChatOllama(model="gemma3:4b")
+embedding_model = OllamaEmbeddings(model="nomic-embed-text:latest")
 DB_SAVE_PATH = "db/faiss_index_multimodal"
 
 PROCESSOR_MAP = {
