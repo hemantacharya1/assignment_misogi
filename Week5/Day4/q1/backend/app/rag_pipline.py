@@ -37,7 +37,7 @@ def partition_document(file_path: str):
     _, file_extension = os.path.splitext(file_path)
     file_extension = file_extension.lower()
     processor = PROCESSOR_MAP.get(file_extension)
-
+    print("file extension and processor",processor,file_extension)
     if not processor:
         raise ValueError(f"No processor for file type: {file_extension}")
 
@@ -63,27 +63,33 @@ def summarize_image(image_data: bytes) -> str:
 def process_elements_to_documents(elements, file_path: str) -> List[Document]:
     documents = []
     splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-
+    
+    print(elements)
     for i, element in enumerate(elements):
-        if isinstance(element, Image):
-            image_path = element.metadata.image_path
-            if image_path and os.path.exists(image_path):
-                with open(image_path, "rb") as img_file:
-                    image_bytes = img_file.read()
-                    summary = summarize_image(image_bytes)
-                    metadata = {"source": file_path, "element_index": i, "content_type": "image_summary"}
-                    documents.append(Document(page_content=summary, metadata=metadata))
-        else:
-            metadata = {"source": file_path, "element_index": i}
-            content = element.text.decode() if isinstance(element.text, bytes) else element.text
-            chunks = splitter.create_documents([content], metadatas=[metadata])
-            documents.extend(chunks)
+            print("Raw element text",element)
+            if isinstance(element, Image):
+                print("Image type",element)
+                image_path = element.metadata.image_path
+                if image_path and os.path.exists(image_path):
+                    with open(image_path, "rb") as img_file:
+                        image_bytes = img_file.read()
+                        summary = summarize_image(image_bytes)
+                        metadata = {"source": file_path, "element_index": i, "content_type": "image_summary"}
+                        documents.append(Document(page_content=summary, metadata=metadata))
+            else:
+                print("Text type",element)
+                metadata = {"source": file_path, "element_index": i}
+                content = element.text.decode() if isinstance(element.text, bytes) else element.text
+                chunks = splitter.create_documents([content], metadatas=[metadata])
+                documents.extend(chunks)
     return documents
 
 
 def ingest_file(file_path: str):
     elements = partition_document(file_path)
+    print(elements)
     documents = process_elements_to_documents(elements, file_path)
+    print(documents)
     db = FAISS.from_documents(documents, embedding_model)
     db.save_local(DB_SAVE_PATH)
     return len(documents)

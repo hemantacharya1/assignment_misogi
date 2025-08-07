@@ -18,12 +18,8 @@ async def ingest_document(file: UploadFile = File(...)):
     with open(file_path, "wb") as f:
         shutil.copyfileobj(file.file, f)
 
-    try:
-        num_docs = ingest_file(file_path)
-        return {"status": "success", "file": file.filename, "documents_indexed": num_docs}
-    except Exception as e:
-        return JSONResponse(status_code=500, content={"error": str(e)})
-
+    num_docs = ingest_file(file_path)
+    return {"status": "success", "file": file.filename, "documents_indexed": num_docs}
 @app.post("/query")
 async def query_document(question: str = Form(...)):
     try:
